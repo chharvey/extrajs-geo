@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "http://chharvey.github.io/extrajs-geo/state-data.schema.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "description": "data for a US state or territory",
+    "required": ["code", "name", "population", "area", "region"],
+    "additionalProperties": false,
+    "properties": {
+      "code"      : { "type": "string" , "description": "the postal code of the state/territory" },
+      "name"      : { "type": "string" , "description": "the common name of the state/territory" },
+      "population": { "type": "integer", "description": "the number of residents of the state/territory, according to the latest census" },
+      "area"      : { "type": "number" , "description": "the area of state/territory land, in square kilometers (sq. km)" },
+      "region"    : {
+        "enum": ["northeast", "south", "midwest", "southwest", "west"],
+        "description": "the region(s) of the US to which this state/territory belongs. see <https://en.wikipedia.org/wiki/List_of_regions_of_the_United_States>."
+      }
+    }
+  }
+}

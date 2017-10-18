@@ -1,0 +1,22 @@
+{
+  "name": "extrajs-geo",
+  "version": "0.1.0",
+  "description": "Geographic location data and structures.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chharvey/extrajs-geo.git"
+  },
+  "keywords": [
+    "geolocation"
+  ],
+  "author": "Chris Harvey <chrisharvey2pi@gmail.com> (https://chharvey.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chharvey/extrajs-geo/issues"
+  },
+  "homepage": "https://github.com/chharvey/extrajs-geo#readme"
+}
